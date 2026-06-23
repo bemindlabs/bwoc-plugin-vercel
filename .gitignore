@@ -3,6 +3,8 @@
 .DS_Store
 .bwoc/
 node_modules/
+# Local dev journal — not part of the published plugin
+/notes/
 # Generated sub-agent files describe YOUR fleet — never committed (generic plugin)
 /agents/agent-*.md
 # Re-exported framework skills describe YOUR workspace — never committed
