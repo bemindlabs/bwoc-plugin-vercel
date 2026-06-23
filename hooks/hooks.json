@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v bwoc >/dev/null 2>&1 && [ -e .bwoc/agents.toml -o -n \"$BWOC_WORKSPACE\" ] && echo \"BWOC fleet available — $(bwoc list --count 2>/dev/null || echo '?') agents. Use /bwoc:list, /bwoc:status, /bwoc:send, /bwoc:run, /bwoc:team, /bwoc:task, /bwoc:memory, or the bwoc-fleet skill.\" || true"
+          }
+        ]
+      }
+    ]
+  }
+}

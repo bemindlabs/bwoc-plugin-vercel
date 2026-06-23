@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: plugin structural smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      # Per-tool manifests are committed; verify they still match the canonical source.
+      - name: Manifest parity
+        run: node scripts/build.mjs --check
+      # Structural smoke — manifests parse, versions agree, frontmatter + hooks valid.
+      # `bwoc` isn't on PATH in CI; validate.mjs treats that as advisory (exit 0).
+      - name: Structural smoke
+        run: node scripts/validate.mjs

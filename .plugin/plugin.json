@@ -1,0 +1,22 @@
+{
+  "name": "bwoc-plugin",
+  "version": "0.1.0",
+  "description": "BWOC fleet adapter for AI coding agents — coordinate an agent fleet, run headless tasks, manage Saṅgha teams, and read workspace deep-memory by wrapping the bwoc CLI. One plugin, installable into Claude Code, Codex, Cursor, Copilot, and Grok.",
+  "author": {
+    "name": "BeMind Labs",
+    "url": "https://github.com/bemindlabs"
+  },
+  "homepage": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "repository": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "license": "MIT",
+  "keywords": [
+    "bwoc",
+    "agents",
+    "fleet",
+    "coordination",
+    "memory",
+    "sangha",
+    "multi-agent",
+    "cli"
+  ]
+}

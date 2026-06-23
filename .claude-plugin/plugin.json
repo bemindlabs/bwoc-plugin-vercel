@@ -1,0 +1,26 @@
+{
+  "name": "bwoc",
+  "version": "0.1.0",
+  "description": "BWOC fleet adapter — coordinate an agent fleet, run headless tasks, and read shared memory via the bwoc CLI.",
+  "author": {
+    "name": "BeMind Labs",
+    "url": "https://github.com/bemindlabs"
+  },
+  "homepage": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "repository": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "license": "MIT",
+  "keywords": [
+    "bwoc",
+    "agents",
+    "fleet",
+    "coordination",
+    "memory",
+    "sangha",
+    "multi-agent",
+    "cli"
+  ],
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
+}

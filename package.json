@@ -1,0 +1,17 @@
+{
+  "name": "bwoc-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BWOC fleet adapter for AI coding agents — one universal plugin for Claude Code, Codex, Cursor, Copilot, and Grok.",
+  "homepage": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "repository": "https://github.com/bemindlabs/bwoc-plugin-vercel",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:check": "node scripts/build.mjs --check",
+    "validate": "node scripts/validate.mjs",
+    "gen-agents": "node scripts/gen-agents.mjs",
+    "test": "node scripts/build.mjs --check && node scripts/validate.mjs"
+  }
+}

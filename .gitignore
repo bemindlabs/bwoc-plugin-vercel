@@ -1,0 +1,9 @@
+# BWOC agent worktrees
+/worktrees/
+.DS_Store
+.bwoc/
+node_modules/
+# Generated sub-agent files describe YOUR fleet — never committed (generic plugin)
+/agents/agent-*.md
+# Re-exported framework skills describe YOUR workspace — never committed
+/skills/fw-*/
